@@ -1,0 +1,3 @@
+br/com/fiap/gateway/config/SpringCloudConfig.class
+br/com/fiap/gateway/GatewayApplication.class
+br/com/fiap/gateway/DownstreamServiceHealthIndicator.class

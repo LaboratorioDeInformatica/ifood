@@ -1,0 +1,3 @@
+br/com/fiap/purchase/PurchaseApplication.class
+br/com/fiap/purchase/DownstreamServiceHealthIndicator.class
+br/com/fiap/purchase/controller/PurchaseMessageController.class
