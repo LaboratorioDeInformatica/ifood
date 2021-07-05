@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+
+  eureka-server:
+      container_name: eureka-server
+      build: ./eureka-server
+      ports:
+        - "8761:8761"
+        - "8302:8302"
+      networks:
+        - integration
+      environment:
+        - "SPRING_PROFILES_ACTIVE=docker"
+
+networks:
+  integration:
+    name: integration
+    driver: bridge
+    external:
+      name: integration
+ 
