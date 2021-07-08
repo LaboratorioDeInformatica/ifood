@@ -1,3 +1,6 @@
 /home/diego/Documents/fiap_trabalhos/microservice/ifood/voucher/src/main/java/br/com/fiap/voucher/DownstreamServiceHealthIndicator.java
 /home/diego/Documents/fiap_trabalhos/microservice/ifood/voucher/src/main/java/br/com/fiap/voucher/controller/MessageVoucherController.java
 /home/diego/Documents/fiap_trabalhos/microservice/ifood/voucher/src/main/java/br/com/fiap/voucher/VoucherApplication.java
+/home/diego/Documents/fiap_trabalhos/microservice/ifood/voucher/src/main/java/br/com/fiap/voucher/dto/MessageVoucherDTO.java
+/home/diego/Documents/fiap_trabalhos/microservice/ifood/voucher/src/main/java/br/com/fiap/voucher/service/VoucherService.java
+/home/diego/Documents/fiap_trabalhos/microservice/ifood/voucher/src/main/java/br/com/fiap/voucher/service/impl/VoucherServiceImpl.java
