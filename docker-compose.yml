@@ -1,0 +1,51 @@
+version: "3.5"
+services:
+    eureka01:
+        container_name: eureka-server
+        build:
+            context: ./eureka
+            dockerfile: Dockerfile
+        image: eureka-server:latest
+        ports:
+            - 8083:8083
+        networks:
+            - fiap-network
+    gateway01:
+        container_name: gateway-01
+        build:
+            context: ./gateway
+            dockerfile: Dockerfile
+        image: gateway:latest
+        ports:
+            - 8080:8080
+        depends_on:
+          - "eureka01"
+        networks:
+            - fiap-network
+    purchase01:
+        container_name: purchase-01
+        build:
+            context: ./purchase
+            dockerfile: Dockerfile
+        image: purchase:latest
+        ports:
+            - 8082:8082
+        depends_on:
+          - "eureka01"
+        networks:
+            - fiap-network
+    voucher01:
+        container_name: voucher-01
+        build:
+            context: ./voucher
+            dockerfile: Dockerfile
+        image: voucher:latest
+        ports:
+            - 8081:8081
+        depends_on:
+          - "eureka01"
+        networks:
+            - fiap-network
+networks:
+  fiap-network:
+        driver: bridge
