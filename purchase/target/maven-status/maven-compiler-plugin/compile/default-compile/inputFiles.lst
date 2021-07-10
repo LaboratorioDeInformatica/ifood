@@ -1,3 +1,6 @@
 /home/diego/Documents/fiap_trabalhos/microservice/ifood/purchase/src/main/java/br/com/fiap/purchase/DownstreamServiceHealthIndicator.java
 /home/diego/Documents/fiap_trabalhos/microservice/ifood/purchase/src/main/java/br/com/fiap/purchase/controller/PurchaseMessageController.java
+/home/diego/Documents/fiap_trabalhos/microservice/ifood/purchase/src/main/java/br/com/fiap/purchase/service/BirthdayBiggestBuyerService.java
+/home/diego/Documents/fiap_trabalhos/microservice/ifood/purchase/src/main/java/br/com/fiap/purchase/best/buyer/dto/MockBestBuyerDTO.java
 /home/diego/Documents/fiap_trabalhos/microservice/ifood/purchase/src/main/java/br/com/fiap/purchase/PurchaseApplication.java
+/home/diego/Documents/fiap_trabalhos/microservice/ifood/purchase/src/main/java/br/com/fiap/purchase/service/impl/BirthdayBiggestBuyerServiceImpl.java

@@ -1,3 +1,6 @@
+br/com/fiap/purchase/best/buyer/dto/MockBestBuyerDTO.class
 br/com/fiap/purchase/PurchaseApplication.class
+br/com/fiap/purchase/service/BirthdayBiggestBuyerService.class
+br/com/fiap/purchase/service/impl/BirthdayBiggestBuyerServiceImpl.class
 br/com/fiap/purchase/DownstreamServiceHealthIndicator.class
 br/com/fiap/purchase/controller/PurchaseMessageController.class
