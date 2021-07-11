@@ -2,7 +2,7 @@ spring:
   application:
     name: purchase
   datasource:
-    url: jdbc:postgresql://localhost:5432/purchase
+    url: jdbc:postgresql://eureka-server:5432/purchase
     username: postgres
     password: fiap
   jpa:
@@ -15,4 +15,4 @@ eureka:
   client:
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8083/eureka
+      defaultZone: http://eureka-server:8083/eureka
