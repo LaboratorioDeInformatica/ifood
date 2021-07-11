@@ -1,10 +1,18 @@
 spring:
   application:
     name: purchase
+  datasource:
+    url: jdbc:postgresql://localhost:5432/purchase
+    username: postgres
+    password: fiap
+  jpa:
+    hibernate:
+      ddl-auto: update
 server:
   port: 8082
+  
 eureka:
   client:
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka-server:8083/eureka
+      defaultZone: http://localhost:8083/eureka

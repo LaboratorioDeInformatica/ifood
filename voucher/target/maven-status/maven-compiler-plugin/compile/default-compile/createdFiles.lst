@@ -3,5 +3,6 @@ br/com/fiap/voucher/service/impl/VoucherServiceImpl.class
 br/com/fiap/voucher/controller/MessageVoucherController.class
 br/com/fiap/voucher/dto/MessageVoucherDTO$MessageVoucherDTOBuilder.class
 br/com/fiap/voucher/DownstreamServiceHealthIndicator.class
+br/com/fiap/voucher/client/PurchaseClient.class
 br/com/fiap/voucher/VoucherApplication.class
 br/com/fiap/voucher/dto/MessageVoucherDTO.class
