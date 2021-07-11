@@ -46,6 +46,18 @@ services:
           - "eureka01"
         networks:
             - fiap-network
+    app01:
+        container_name: app
+        build:
+            context: ./app
+            dockerfile: dockerfile
+        ports:
+            - 8085:80
+        depends_on:
+            - "voucher01"
+        networks:
+            - fiap-network
+
 networks:
   fiap-network:
         driver: bridge
