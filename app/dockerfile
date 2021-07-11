@@ -1,0 +1,18 @@
+FROM nginx:latest
+
+
+RUN curl -sL https://deb.nodesource.com/setup_14.x -o setup_14.sh 
+RUN sh ./setup_14.sh
+RUN apt-get update
+RUN apt-get install nodejs -y
+RUN npm install -y
+RUN npm install -g @ionic/cli
+
+COPY ./default.conf /etc/nginx/conf.d/
+#COPY ./app/. /usr/share/app/
+COPY . /usr/share/app/
+RUN cd /usr/share/app && npm install
+RUN cd /usr/share/app && ionic build --prod
+RUN cp usr/share/app/build/. usr/share/nginx/html/ -r
+
+#COPY ./app/ /usr/share/nginx/html

@@ -1,0 +1,65 @@
+ion-content{
+    /* --ion-background-color:#fff; */
+    --ion-background-color:rgb(192, 65, 65);
+}
+
+
+
+
+ion-toolbar{
+    --background: #ea1d2c;
+}
+
+ion-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+
+  ion-input{
+   border-bottom: 2.5px solid rgb(175, 63, 63);
+ }
+
+ /* .mg-tp{
+     margin-top: 235px;
+ } */
+
+ ion-button{
+    --background: #872c2c;
+    margin-top: 18px;
+ }
+
+
+.face-row{
+   margin-top: 50px !important;
+}
+
+ .shake {
+    
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    
+
+  0%{transform: rotate(45deg); margin-left: -10px !important;}
+  20%{transform: rotate(0deg);  margin-left: 0px !important;}
+
+  50%{transform: rotate(-45deg); margin-left: 10px !important;}
+  90%{transform: rotate(0deg); margin-left: 0px !important;}
+  
+  }
+
+/* 
+
+  opacity: 1; 
+    transition: opacity 10s linear 0s, opacity 3000ms; */
+
+    .shake-time{
+        opacity: 0; 
+    transition: opacity 10s linear 0s, opacity 1500ms; 
+    }
