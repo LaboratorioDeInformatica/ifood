@@ -8,6 +8,8 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  liquibase.change-log: classpath:/database/master-changelog.xml  
+  
 server:
   port: 8082
   
