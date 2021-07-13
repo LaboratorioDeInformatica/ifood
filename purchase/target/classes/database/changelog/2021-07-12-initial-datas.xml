@@ -12,7 +12,7 @@
 				<constraints primaryKey="true" nullable="false" />
 			</column>
 			<column name="email" type="varchar(200)" />
-			<column name="birthday" type="date" />
+			<column name="birthday" type="varchar(200)" />
 			<column name="value" type="double" />
 		</createTable>
 	</changeSet>
@@ -22,7 +22,7 @@
 	            tableName="summation">  
 	        <column  name="id"  value="424f6bec-220c-4859-85f5-ad80878f35ad"/>  
 	        <column  name="email"  value="teste@teste.com.br"/>  
-	        <column  name="birthday"  value="2020-05-05"/>  
+	        <column  name="birthday"  value="JULY-05"/>  
 	        <column  name="value"  value="300"/>  
 	    </insert>  
 	</changeSet>
@@ -32,7 +32,7 @@
 	            tableName="summation">  
 	        <column  name="id"  value="e14da7ed-2be3-476e-9ad6-d2350af5b937"/>  
 	        <column  name="email"  value="teste1@teste.com.br"/>  
-	        <column  name="birthday"  value="2020-05-05"/>  
+	        <column  name="birthday"   value="JULY-05"/>  
 	        <column  name="value"  value="75"/>  
 	    </insert>  
 	</changeSet>
@@ -42,7 +42,7 @@
 	            tableName="summation">  
 	        <column  name="id"  value="d82b7af4-8ddf-4be1-9b42-11605390d52e"/>  
 	        <column  name="email"  value="teste2@teste.com.br"/>  
-	        <column  name="birthday"  value="2020-05-05"/>  
+	        <column  name="birthday"   value="JULY-05" />  
 	        <column  name="value"  value="20"/>  
 	    </insert>  
 	</changeSet>

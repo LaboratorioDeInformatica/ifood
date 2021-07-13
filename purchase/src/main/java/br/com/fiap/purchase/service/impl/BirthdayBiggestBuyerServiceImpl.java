@@ -1,5 +1,6 @@
 package br.com.fiap.purchase.service.impl;
 
+import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,7 +26,7 @@ public class BirthdayBiggestBuyerServiceImpl implements BirthdayBiggestBuyerServ
 		if(annyversaryValidate(email)) {
 			Pageable firstPageWithTwoElements = PageRequest.of(0,1);
 			
-			List<BuyerDto> findBestBuyer = sellRepository.findBestBuyer(firstPageWithTwoElements);
+			List<BuyerDto> findBestBuyer = sellRepository.findBestBuyer(firstPageWithTwoElements, birthdayDate());
 			List<BuyerDto> collect = findBestBuyer.stream().filter(x->x.getEmail().equals(email)).collect(Collectors.toList());
 			if (!collect.isEmpty()) {
 				return true;
@@ -43,5 +44,11 @@ public class BirthdayBiggestBuyerServiceImpl implements BirthdayBiggestBuyerServ
 		List<String> collect = annyversaryList.stream().filter(x -> x.equals(email)).collect(Collectors.toList());
 		return collect.isEmpty() ? false : true;
 	}
+	
+	private String birthdayDate() {
+	//	String birthday = LocalDate.now().getMonth().toString().concat("-").concat( String.valueOf((LocalDate.now().getDayOfMonth())) ); 
+		String birthday = Month.JULY + "-05";		
+		return birthday;
+	} 
 
 }

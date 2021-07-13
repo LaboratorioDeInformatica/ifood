@@ -13,7 +13,7 @@ public class VoucherServiceImpl implements VoucherService{
 	
 	private final String GIFT_HAPPY_BITHDAY = "Feliz Aniversario você acaba de ganhar um voucher";
 	private final String NO_GIFT_HAPPY_BITHDAY = "Sem voucher";
-	private final Double  GIFT_HAPPY_BITHDAY_VALUE = 50.00D;
+	private final Double  GIFT_HAPPY_BITHDAY_VALUE = 100.00D;
 	private final Double  NO_GIFT_HAPPY_BITHDAY_VALUE = 00.00D;
 	private final String  PURCHASE_SERVICE_UNAVAILABLE_ = "Serviço de compras indisponivel";
 	private static final String PURCHASE_SERVICE = "purchaseService";
