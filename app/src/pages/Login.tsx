@@ -34,7 +34,7 @@ class Login extends React.Component<{}, { value: boolean, class: string }> {
 
 
 
-    if (this.email === 'teste@teste.com.br' || this.email === 'fiap@teste.com' || this.email === 'professor@teste.com') {
+    if (this.email === 'teste@teste.com.br' || this.email === 'teste1@teste.com.br' || this.email === 'teste2@teste.com.br') {
       const token = { email: this.email }     
       
       localStorage.setItem('token', JSON.stringify(token))

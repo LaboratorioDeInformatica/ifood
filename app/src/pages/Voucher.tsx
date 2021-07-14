@@ -80,7 +80,7 @@ class Voucher extends React.Component<{}, { email: string, msg: string, valor: n
                     <div className="col-10 col-md-10">
                       <div className="voucher-value">
                         <div className="text-center">
-                          <p>Valor: <span>{this.state.valor}</span></p>
+                          <p>Valor: <span>R${this.state.valor?.toFixed(2)|| 0}</span></p>
                         </div>
 
                       </div>
