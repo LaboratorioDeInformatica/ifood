@@ -37,7 +37,7 @@ public class Summation implements Serializable {
 	private String email;
 	
 	@Column(name="birthday")
-	private LocalDate birthday;
+	private String birthday;
 
 	@Column(name="value")
 	private Double value;

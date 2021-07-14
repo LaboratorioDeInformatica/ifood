@@ -2,12 +2,14 @@ spring:
   application:
     name: purchase
   datasource:
-    url: jdbc:postgresql://eureka-server:5432/purchase
+    url: jdbc:postgresql://postgresql:5432/purchase
     username: postgres
     password: fiap
   jpa:
     hibernate:
       ddl-auto: update
+  liquibase.change-log: classpath:/database/master-changelog.xml  
+  
 server:
   port: 8082
   

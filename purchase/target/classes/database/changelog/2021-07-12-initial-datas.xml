@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+	<changeSet author="hashimoto" id="1">
+		<createTable tableName="summation">
+			<column name="id" type="uuid">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="email" type="varchar(200)" />
+			<column name="birthday" type="varchar(200)" />
+			<column name="value" type="double" />
+		</createTable>
+	</changeSet>
+        
+    <changeSet  author="hashimoto"  id="2">  
+	    <insert 
+	            tableName="summation">  
+	        <column  name="id"  value="424f6bec-220c-4859-85f5-ad80878f35ad"/>  
+	        <column  name="email"  value="teste@teste.com.br"/>  
+	        <column  name="birthday"  value="JULY-05"/>  
+	        <column  name="value"  value="300"/>  
+	    </insert>  
+	</changeSet>
+	
+	<changeSet  author="hashimoto"  id="3">  
+	    <insert 
+	            tableName="summation">  
+	        <column  name="id"  value="e14da7ed-2be3-476e-9ad6-d2350af5b937"/>  
+	        <column  name="email"  value="teste1@teste.com.br"/>  
+	        <column  name="birthday"   value="JULY-05"/>  
+	        <column  name="value"  value="75"/>  
+	    </insert>  
+	</changeSet>
+	
+	<changeSet  author="hashimoto"  id="4">  
+	    <insert 
+	            tableName="summation">  
+	        <column  name="id"  value="d82b7af4-8ddf-4be1-9b42-11605390d52e"/>  
+	        <column  name="email"  value="teste2@teste.com.br"/>  
+	        <column  name="birthday"   value="JULY-05" />  
+	        <column  name="value"  value="20"/>  
+	    </insert>  
+	</changeSet>
+
+</databaseChangeLog>

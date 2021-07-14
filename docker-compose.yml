@@ -56,8 +56,28 @@ services:
         depends_on:
             - "voucher01"
         networks:
-            - fiap-network
-
+            - fiap-network            
+    postgresql:
+        container_name: postgresql
+        image: postgres
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_PASSWORD=fiap
+            - POSTGRES_USER=postgres
+            - POSTGRES_DB=purchase
+        networks:
+            - fiap-network    
+    pgadmin:
+        container_name: pgadmin
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "almeida.fb@gmail.com"
+            PGADMIN_DEFAULT_PASSWORD: "fiap"
+        ports:
+            - "8086:80"
+        networks:
+            - fiap-network       
 networks:
   fiap-network:
         driver: bridge
