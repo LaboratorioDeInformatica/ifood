@@ -40,7 +40,7 @@ class Voucher extends React.Component<{}, { email: string, msg: string, valor: n
 
 
   componentDidMount() {
-    this.getData('teste@teste.com.br')
+    this.getData(this.email)
   }
 
 
