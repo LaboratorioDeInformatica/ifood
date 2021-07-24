@@ -73,7 +73,7 @@ class Voucher extends React.Component<{}, { email: string, msg: string, valor: n
                   <label form="name">Email:</label>
                   <input name="email" readOnly={true} value={this.state.email} type="text" className="form-control" />
 
-                  <span className="sp-msg text-center">Feliz Aniversario você acaba de ganhar um voucher</span>
+                  <span className="sp-msg text-center">{this.state.msg}</span>
 
                   <div className="row">
                     <div className="col-1 col-md-1"></div>
